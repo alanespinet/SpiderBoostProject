@@ -1,3 +1,4 @@
+/* GENERAL STYLES */
 * {
   box-sizing: border-box !important;
 }
@@ -6,6 +7,21 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: #619081;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+label {
+  font-family: 'Quicksand', sans-serif;
+  color: #f4ca0c;
+  font-size: 1rem;
+}
+
+
+/* HEADER STYLES */
 .header-top {
   background-color: #4a4a4a;
 }
@@ -46,7 +62,6 @@ p {
   margin-bottom: 0;
   padding-top: 1rem;
   padding-bottom: 5px;
-  text-shadow:
 }
 
 #header-title .first-word,
@@ -145,8 +160,196 @@ i {
   padding-right: 0;
 }
 
+
+/* INFO STYLES */
+
+#insights {
+  background-color: #e5e9ed;
+  margin-top: 4px;
+}
+
+.insights-slider {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.insights-item {
+  position: relative;
+}
+
+.insights-text {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  width: 80%;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-size: 2.3rem;
+}
+
+.insight-overlay {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 98%;
+  height: 97%;
+  background: black;
+  opacity: .6;
+
+  transition: opacity .3s ease-out;
+}
+
+.insight-overlay:hover {
+  cursor: pointer;
+  opacity: 0;
+}
+
+.slider-container {
+  padding: 15px;
+}
+
+
+/* SERVICES STYLES */
+
+#services-contact {
+  height: 370px;
+}
+
+.services-container,
+.services-row,
+#services,
+#services-wrapper {
+  height: 100%;
+}
+
+.service p {
+  font-family: 'Cabin', sans-serif;
+  color: #619081;
+  font-size: 1.7rem;
+}
+
+.service img {
+  width: 70%;
+}
+
+.service {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%;
+
+  text-align: center;
+
+  padding: 20px;
+  padding-bottom: 30px;
+
+  transition: box-shadow .3s ease;
+  position: relative;
+}
+
+.service:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px lightgray;
+}
+
+.service:hover .explore {
+  opacity: 1
+}
+
+.explore {
+  position: absolute;;
+  bottom: -40px;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+
+.explore-icon {
+  padding-left: 10px;
+}
+
+#services-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+#services-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* CONTACT-US STYLES */
+
+#contact {
+  position: relative;
+  height: 100%;
+}
+
+.form-wrapper {
+  background-color: #619081;
+  width: 80%;
+  padding: 2rem;
+  position: absolute;
+  top: -50px;
+  box-shadow: 0px 5px 2px 2px lightgray;
+}
+
+.form-wrapper h2 {
+  color: white;
+  padding-top: 30px;
+}
+
+.controls-group input,
+.controls-group textarea {
+  display: block;
+  background-color: #619081;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.controls-group input:focus,
+.controls-group textarea:focus {
+  outline: none;
+}
+
+.controls-group button {
+  display: block;
+  border: none;
+  background-color: #f4ca0c;
+  color: #619081;
+  padding: 8px 25px;
+  margin: 0 auto;
+}
+
+.final-control {
+  margin-bottom: 2rem;
+}
+
+.controls-group button i {
+  color: #619081;
+}
+
+.controls-group textarea {
+  width: 100%;
+  height: 80px;
+}
+
+
+/* PROFESSIONALS STYLES */
+#professionals {
+  background-color: #e5e9ed;
+  text-align: center;
+}
+
+
+
 @media (max-width: 992px) {
   #search-box {
     right: 0;
+  }
+}
+
+
+@media (max-width: 748px) {
+  .professionals-container {
+    width: 95%;
   }
 }
