@@ -2,54 +2,111 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Kaufman | Rossin - cpa advisors</title>
+    <title>Kaufman | Rossin - cpa advisors</title>
 
-  <link rel="stylesheet" href="vendor/bootstrap4/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
 
-  <!-- Fonts (from Google Fonts) -->
-  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!-- Fonts (from Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 
 <body>
     <section id="header">
-      <div class="header-top">
-        <div class="container">
-        <nav class="nav">
-          <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
-          <p>|</p>
-          <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>CLIENT PORTAL</a>
-          <a class="nav-link nav-phone" href="#"><i class="fa fa-phone" aria-hidden="true"></i>888.680.5726</a>
-        </nav>
-        </div>
-      </div>
+        <div class="header-top">
+            <div class="container">
+                <ul class="nav">
+                    <li><a  href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                    <p>|</p>
+                    <li><a  href="#"><i class="fa fa-user" aria-hidden="true"></i>CLIENT PORTAL</a></li>
+                    <li class="nav-phone"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>888.680.5726</a></li>
+                </ul>
+            </div><!-- /.container -->
+        </div><!-- /.header-top -->
 
-      <div class="header-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-4">
-              <h3 id="header-title"><span class="first-word">KAUFMAN</span> | <span class="last-world">ROSSIN</span></h3>
-              <p id="cpa-advisors-text">cpa &#8729; advisors</p>
-            </div>
-            <div class="col-xs-12 col-md-8">
-              <div class="row">
-                <div class="col-md-9">&nbsp;</div>
-                <div class="col-xs-12 col-md-3 row search-row">
-                  <input id="search" class="col-xs-10" value="Search">
-                  <i class="fa fa-search col-xs-2" id="search-icon" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Left column -->
+                    <div class="col-xs-12 col-md-4">
+                        <h2 id="header-title"><span class="first-word">KAUFMAN</span> | <span class="last-world">ROSSIN</span></h2>
+                        <p id="cpa-advisors-text">cpa &#8729; advisors</p>
+                    </div><!-- /left column -->
+
+                    <!-- Right column -->
+                    <div class="col-xs-12 col-md-8">
+                        <!-- Search box -->
+                        <div class="row search-row">
+                          <div id="search-box" class="col-xs-12 col-md-3 col-md-offset-9">
+                            <input type="text" value="Search" />
+                            <i class="fa fa-search" id="search-icon" aria-hidden="true"></i>
+                          </div><!-- /Search box -->
+                        </div>
+
+                        <!-- Navbar -->
+                        <!-- <div class="row"> -->
+                          <nav class="navbar main-navbar">
+                            <div class="container-fluid">
+                              <!-- Brand and toggle get grouped for better mobile display -->
+                              <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                  <i class="fa fa-bars fa-2x menu-toggler" aria-hidden="true"></i>
+                                </button>
+                              </div>
+
+                              <!-- Collect the nav links, forms, and other content for toggling -->
+                              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a class="header-nav-link" href="#">Industries</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a class="header-nav-link" href="#">Services</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a class="header-nav-link" href="#">Insights</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a class="header-nav-link" href="#">Events</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a class="header-nav-link" href="#">Careers</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a class="header-nav-link" href="#">About Us</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a class="header-nav-link" href="#">Contact Us</a></li>
+                                </ul>
+                              </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                          </nav><!-- /Navbar -->
+                        <!--</div> row -->
+
+
+                   </div><!-- /Right column -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.header-bottom -->
     </section>
+
+    <!-- Vendor JS -->
+    <script src="vendor/jquery/jquery.min.js" charset="utf-8"></script>
+    <script src="vendor/tether/tether.min.js" charset="utf-8"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
 </body>
 
 </html>

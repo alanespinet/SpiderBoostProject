@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box !important;
+}
+
 p {
   margin: 0;
 }
@@ -15,12 +19,22 @@ p {
   justify-content: space-between;
 }
 
+.main-navbar {
+  display: block;
+}
+
+.nav a:hover {
+  background: transparent !important;
+}
+
 .nav a,
 .nav p {
+  font-family: 'Cabin', sans-serif;
   padding: 5px 10px;
   color: #f4ca0c;
-  font-size: .85rem;
+  font-size: 1.3rem;
 }
+
 
 #header {
   box-shadow: 0 3px 2px #8a8a8a;
@@ -54,14 +68,17 @@ p {
 
 #cpa-advisors-text {
   font-family: 'Cabin', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
   padding-bottom: 1rem;
 }
 
 #header .nav-phone {
   margin-left: auto;
-  font-size: 1.2rem;
+}
+
+#header .nav-phone a {
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -69,28 +86,67 @@ i {
   padding-right: 8px;
 }
 
-#search {
-  outline: none;
-  border: none;
+
+#search-box {
+  padding: 8px 16px;
   text-align: right;
   background-color: #e5e9ed;
-  font-family: 'Cabin', sans-serif;
-  color: #619081;
-  font-size: 0.8rem;
-  padding-top: 7px;
+  position: relative;
+  right: 20px;
 }
 
-#search:focus {
+#search-box input {
+  border: none;
+  text-align: right;
+  padding-right: 5px;
+  background-color: #e5e9ed;
+  color: #619081;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 8px;
+}
+
+#search-box input:focus {
   outline: none;
 }
 
 #search-icon {
   color: #619081;
   font-size: 1.5rem;
-  padding: 0;
+}
+
+#search-icon:hover {
+  cursor: pointer;
 }
 
 .search-row {
-  background-color: #e5e9ed;
-  padding: 10px;
+  padding-top: 1rem;
+}
+
+.header-nav-link {
+  color: #619081 !important;
+  font-size: 1.8rem !important;
+  padding: 0 5px !important;
+
+}
+
+.main-navbar {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-toggler {
+  color: #619081;
+}
+
+#nav-menu {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 992px) {
+  #search-box {
+    right: 0;
+  }
 }
