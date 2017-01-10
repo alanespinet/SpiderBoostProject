@@ -1,0 +1,96 @@
+p {
+  margin: 0;
+}
+
+.header-top {
+  background-color: #4a4a4a;
+}
+
+.header-bottom {
+  padding: 0.8rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a,
+.nav p {
+  padding: 5px 10px;
+  color: #f4ca0c;
+  font-size: .85rem;
+}
+
+#header {
+  box-shadow: 0 3px 2px #8a8a8a;
+}
+
+#header-title {
+  color: #9a9a9a;
+  font-weight: 100;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 5px;
+  text-shadow:
+}
+
+#header-title .first-word,
+#cpa-advisors-text
+ {
+  color: #619081;
+  font-weight: bold;
+}
+
+#header-title .first-word {
+  text-shadow: -1px 0 1px lightgray;
+}
+
+#header-title .last-world {
+  color: #618aa4;
+  font-weight: normal;
+  text-shadow: 1px 0 1px lightgray;
+}
+
+#cpa-advisors-text {
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+}
+
+#header .nav-phone {
+  margin-left: auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+i {
+  padding-right: 8px;
+}
+
+#search {
+  outline: none;
+  border: none;
+  text-align: right;
+  background-color: #e5e9ed;
+  font-family: 'Cabin', sans-serif;
+  color: #619081;
+  font-size: 0.8rem;
+  padding-top: 7px;
+}
+
+#search:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: #619081;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.search-row {
+  background-color: #e5e9ed;
+  padding: 10px;
+}
