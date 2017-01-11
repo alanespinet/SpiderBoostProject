@@ -20,6 +20,16 @@ label {
   font-size: 1rem;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
+hr {
+  border: 1px solid gray;
+  margin: 5px;
+  opacity: 0.5;
+}
+
 
 /* HEADER STYLES */
 .header-top {
@@ -337,9 +347,82 @@ i {
 #professionals {
   background-color: #e5e9ed;
   text-align: center;
+  padding-bottom: 6rem;
+}
+
+.professional-item img {
+  margin: 0;
+}
+
+.professional-item-wrapper {
+  position: relative;
+}
+
+.professional-overlay {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 74%;
+  height: 96%;
+  background-color: black;
+  opacity: 0.6;
+
+  transition: opacity .3s ease-out;
+}
+
+.professional-overlay:hover {
+  cursor: pointer;
+  opacity: 0;
+}
+
+.proffesional-personal {
+  width: 74%;
+  padding-top: 10px;
+}
+
+.proffesional-personal p {
+  line-height: 2;
+}
+
+.proffesional-personal .resalted-text {
+  color: #619081;
+}
+
+.resalted-link:link,
+.resalted-link:visited,
+.resalted-link:hover,
+.resalted-link:active
+{
+  color: #619081;
+  text-decoration: none;
+  display: block;
+  padding-top: 3rem;
+  font-size: 1.5rem;
 }
 
 
+/* CLIENTS AND WO WE ARE STYLES */
+
+.clients-column {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.client-text {
+  font-family: 'Cabin', sans-serif;
+  text-align: left;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.clients-link {
+  text-align: left;
+  padding-top: 1rem !important;
+}
+
+#client-whoweare {
+  padding-bottom: 4rem;
+}
 
 @media (max-width: 992px) {
   #search-box {
@@ -347,6 +430,37 @@ i {
   }
 }
 
+
+/* INDUSTRIES STYLES */
+
+#industries {
+  background-image: url('../images/industries/industriesback.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-bottom: 3rem;
+}
+
+.industries-item:hover {
+  cursor: pointer;
+}
+
+
+/* LOCATIONS STYLES */
+
+#locations {
+  background-color: #4a4a4a;
+}
+
+#industries .resalted-text {
+  color: #619081;
+  text-align: center;
+}
+
+.industries-link {
+  text-align: center;
+}
 
 @media (max-width: 748px) {
   .professionals-container {
