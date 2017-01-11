@@ -25,20 +25,20 @@ $('.professionals-carousel').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 400000,
   responsive: [
   {
       breakpoint: 768,
       settings: {
         arrows: true,
-        slidesToShow: 3
+        slidesToShow: 2
       }
   },
   {
       breakpoint: 1200,
       settings: {
         arrows: true,
-        slidesToShow: 4
+        slidesToShow: 3
       }
   }]
 });

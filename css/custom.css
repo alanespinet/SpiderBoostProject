@@ -171,7 +171,7 @@ i {
 }
 
 
-/* INFO STYLES */
+/* INSIGHTS STYLES */
 
 #insights {
   background-color: #e5e9ed;
@@ -204,7 +204,7 @@ i {
   width: 98%;
   height: 97%;
   background: black;
-  opacity: .6;
+  opacity: .4;
 
   transition: opacity .3s ease-out;
 }
@@ -223,6 +223,7 @@ i {
 
 #services-contact {
   height: 370px;
+  box-shadow: 0 0 2px 2px #8a8a8a;
 }
 
 .services-container,
@@ -299,7 +300,14 @@ i {
   padding: 2rem;
   position: absolute;
   top: -50px;
+
   /*box-shadow: 0px 5px 2px 2px lightgray;*/
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"]
+ {
+  width: 100%;
 }
 
 .form-wrapper h2 {
@@ -348,6 +356,7 @@ i {
   background-color: #e5e9ed;
   text-align: center;
   padding-bottom: 6rem;
+  margin-top: 3px;
 }
 
 .professional-item img {
@@ -422,6 +431,7 @@ i {
 
 #client-whoweare {
   padding-bottom: 4rem;
+  box-shadow: 0 0 2px 2px #8a8a8a;
 }
 
 @media (max-width: 992px) {
@@ -440,6 +450,7 @@ i {
   background-size: cover;
 
   padding-bottom: 3rem;
+  margin-top: 3px;
 }
 
 .industries-item:hover {
@@ -645,8 +656,90 @@ i {
   color: #797979;
 }
 
-@media (max-width: 748px) {
-  .professionals-container {
-    width: 95%;
+
+#test {
+  background-color: red;
+  height: 500px;
+}
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width: 1200px) {
+
+  .form-wrapper {
+    position: static;
+    width: 100%;
+  }
+
+  .newsletter-wrapper {
+    padding: 0;
+  }
+
+  #services-contact {
+    height: 800px;
+    padding-bottom: 0;
+  }
+
+  #services {
+    height: 380px;
+  }
+
+  #contact {
+    height: 580px;
+  }
+
+  #services-wrapper {
+    height: 60%;
+  }
+
+  #contact {
+    padding: 0;
+  }
+
+  .professionals-container,
+  .industries-container {
+    width: 85%;
+  }
+
+  #client-whoweare img {
+    margin: 0 auto;
+  }
+
+  .twitter-feed-wrapper {
+    padding-bottom: 2rem;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+  #services {
+    height: 285px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+  }
+
+  .social-menu {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+
+
+  .social-menu a {
+    margin: 0 0.5rem;
+  }
+
+  .social-menu .social-first {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-menu {
+    flex-direction: column;
   }
 }
