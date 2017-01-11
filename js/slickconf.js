@@ -48,20 +48,20 @@ $('.industries-carousel').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 40000,
-  // responsive: [
-  // {
-  //     breakpoint: 768,
-  //     settings: {
-  //       arrows: true,
-  //       slidesToShow: 3
-  //     }
-  // },
-  // {
-  //     breakpoint: 1200,
-  //     settings: {
-  //       arrows: true,
-  //       slidesToShow: 4
-  //     }
-  // }]
+  autoplaySpeed: 4000,
+  responsive: [
+  {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        slidesToShow: 3
+      }
+  },
+  {
+      breakpoint: 1200,
+      settings: {
+        arrows: true,
+        slidesToShow: 4
+      }
+  }]
 });

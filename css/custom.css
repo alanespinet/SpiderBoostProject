@@ -299,7 +299,7 @@ i {
   padding: 2rem;
   position: absolute;
   top: -50px;
-  box-shadow: 0px 5px 2px 2px lightgray;
+  /*box-shadow: 0px 5px 2px 2px lightgray;*/
 }
 
 .form-wrapper h2 {
@@ -446,13 +446,6 @@ i {
   cursor: pointer;
 }
 
-
-/* LOCATIONS STYLES */
-
-#locations {
-  background-color: #4a4a4a;
-}
-
 #industries .resalted-text {
   color: #619081;
   text-align: center;
@@ -460,6 +453,100 @@ i {
 
 .industries-link {
   text-align: center;
+}
+
+/* LOCATIONS STYLES */
+
+#locations {
+  background-color: #4a4a4a;
+}
+
+#locations #email {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.locations-h2 {
+  color: #797979;
+}
+
+.location-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.location-item img {
+  max-width: 100%;
+}
+
+.location-item {
+  flex-basis: 27%;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.location-item:hover .location-overlay {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.location-overlay {
+  background-color: #f4ca0c;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#newsletter-form {
+  top: -20px;
+}
+
+#newsletter-form h2 {
+  margin-bottom: 3rem;
+}
+
+#newsletter-form button {
+  margin-bottom: 7.2rem;
+  display: block;
+}
+
+
+/* TWITTER-FEED STYLES */
+
+#tweeter-feed {
+  background-color: #4a4a4a;
+  border-top: 1px solid #797979;
+  border-bottom: 1px solid #797979;
+}
+
+.twitter-h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.twitter-text {
+  font-style: italic;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.7rem;
+}
+
+.twitter-text a:link,
+.twitter-text a:visited,
+.twitter-text a:hover,
+.twitter-text a:active
+ {
+  color: #f4ca0c;
+}
+
+.tweeter-row {
+  padding: 3rem 0;
 }
 
 @media (max-width: 748px) {
